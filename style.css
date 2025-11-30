@@ -24,6 +24,25 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.header-text {
+    flex: 1;
+}
+
 h1 {
     font-size: 2.5em;
     font-weight: 600;
@@ -107,7 +126,22 @@ h2 {
     font-size: 0.9em;
     color: #777;
     font-style: italic;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+}
+
+.pub-meta {
+    font-size: 0.85em;
+    color: #666;
+    display: flex;
+    gap: 15px;
+}
+
+.pub-citations {
+    color: #0066cc;
+}
+
+.pub-year {
+    color: #999;
 }
 
 .pub-links {
@@ -155,6 +189,17 @@ footer {
     
     .container {
         padding: 20px 10px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .portrait {
+        width: 120px;
+        height: 120px;
     }
     
     h1 {
